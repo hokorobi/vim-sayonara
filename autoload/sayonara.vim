@@ -167,8 +167,8 @@ function! s:prototype.is_buffer_shown_in_another_window(target_buffer)
   return 0
 endfunction
 
-" s:sayonara() {{{1
-function! s:sayonara(do_preserve)
+" sayonara#sayonara() {{{1
+function! sayonara#sayonara(do_preserve)
   let hidden = &hidden
   set hidden
   try
@@ -184,4 +184,3 @@ function! s:sayonara(do_preserve)
 endfunction
 " }}}
 
-command! -nargs=0 -complete=buffer -bang -bar Sayonara call s:sayonara(<bang>0)
