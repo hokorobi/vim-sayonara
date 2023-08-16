@@ -17,6 +17,7 @@ function! s:prototype.create_scratch_buffer()
   setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile
   return bufnr('%')
 endfunction
+" }}}
 
 " s:prototype.handle_modified_buffer() {{{1
 function! s:prototype.handle_modified_buffer()
@@ -39,6 +40,7 @@ function! s:prototype.handle_modified_buffer()
   endif
   return ''
 endfunction
+" }}}
 
 " s:prototype.handle_quit() {{{1
 function! s:prototype.handle_quit()
@@ -53,6 +55,7 @@ function! s:prototype.handle_quit()
   endif
   return 'quit!'
 endfunction
+" }}}
 
 " s:prototype.handle_window() {{{1
 function! s:prototype.handle_window()
@@ -124,6 +127,7 @@ function! s:prototype.handle_window()
     endif
   endif
 endfunction
+" }}}
 
 " s:prototype.preserve_window() {{{1
 function! s:prototype.preserve_window()
@@ -148,6 +152,7 @@ function! s:prototype.preserve_window()
     buffer! #
   endif
 endfunction
+" }}}
 
 " s:prototype.is_buffer_shown_in_another_window() {{{1
 function! s:prototype.is_buffer_shown_in_another_window(target_buffer)
@@ -166,6 +171,7 @@ function! s:prototype.is_buffer_shown_in_another_window(target_buffer)
 
   return 0
 endfunction
+" }}}
 
 " sayonara#sayonara() {{{1
 function! sayonara#sayonara(do_preserve)
