@@ -14,7 +14,6 @@ let s:prototype = {}
 " s:prototype.create_scratch_buffer() {{{1
 function! s:prototype.create_scratch_buffer()
   enew!
-  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile
   return bufnr('%')
 endfunction
 " }}}
